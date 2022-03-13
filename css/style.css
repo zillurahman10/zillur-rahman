@@ -1,0 +1,58 @@
+.logo{
+    width: 90px;
+}
+.main-div{
+    display: flex;
+    justify-content: space-between;
+}
+.div-ul ul{
+    display: flex;
+}
+.div-ul ul a{
+    margin: 20px 15px;
+    text-decoration: none;
+    color: white;
+}
+.background{
+    background-color: #111a28;
+}
+.parent-div-main{
+    margin-top: 100px;
+    margin-left: 100px;
+    display: flex;
+}
+#text{
+    color: white;
+}
+#hello{
+    color: #00CF5D;
+}
+#name{
+    font-size: 80px;
+    font-weight: 700;
+}
+#developer{
+    color: #00CF5D;
+}
+#about{
+    border-color: #00CF5D;
+    border-radius: 5px; 
+    background-color: #111a28; 
+    color: white;
+}
+#resume{
+    border: none; 
+    background-color: #00CF5D; 
+    border-radius: 5px; 
+    font-weight: 400;
+}
+#get{
+    border-color: #00CF5D;
+    border-radius: 5px; 
+    background-color: #111a28; 
+    color: white;
+}
+.details{
+    margin-top: 300px;
+    color: white;
+}
