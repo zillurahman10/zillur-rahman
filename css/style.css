@@ -59,11 +59,75 @@
 #developer{
     color: #00CF5D;
 }
+#about span{
+    position: relative;
+    z-index: 100;
+}
 #about{
-    border-color: #00CF5D;
+    border:2px solid #00CF5D;
+    text-decoration: none;
     border-radius: 5px; 
     background-color: #111a28; 
     color: white;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+    transition: 0.5s;
+    margin-left: 10px;
+    transition-delay: 0s;
+}
+#about:hover{
+    transition-delay: 1.5s;
+    color: #000;
+    box-shadow: 0 0 10px #0f0,
+    0 0 20px #0f0,
+    0 0 40px #0f0,
+    0 0 80px #0f0,
+    0 0 160px #0f0;
+}
+#about::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    height: 2px;
+    transform: translateY(-50%);
+    background: #0f0;
+    box-shadow: 5px -8px 0 #0f0,
+                5px -8px 0 #0f0;
+    transition-delay: 0s, 0.5s, 01s, 1s;
+    transition: width 0.5s, left 0.5s, height 0.5s, 
+    box-shadow 0.5s
+    ;
+}
+#about:hover::before{
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 #0f0,
+                5px 0 0 #0f0;
+}
+#about::after{
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    height: 2px;
+    transform: translateY(-50%);
+    background: #0f0;
+    box-shadow: -5px -8px 0 #0f0,
+                -5px -8px 0 #0f0;
+    transition-delay: 0s, 0.5s, 01s, 1s;
+    transition: width 0.5s, left 0.5s, height 0.5s, 
+    box-shadow 0.5s
+    ;
+}
+#about:hover::after{
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 #0f0,
+                -5px 0 0 #0f0;
 }
 #resume{
     border: none; 
