@@ -175,3 +175,8 @@ header{
     margin-top: 300px;
     color: white;
 }
+.icon{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
