@@ -1,33 +1,39 @@
 *,
 *::before,
-*::after{
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-header{
+
+header {
     position: sticky;
     top: 0;
     background-color: #111a28;
 }
-.logo{
+
+.logo {
     width: 90px;
 }
-.main-div{
+
+.main-div {
     display: flex;
     justify-content: space-between;
 }
-.div-ul ul{
+
+.div-ul ul {
     display: flex;
 }
-.div-ul ul a{
+
+.div-ul ul a {
     margin: 20px 15px;
     text-decoration: none;
     color: white;
     position: relative;
     padding: 0 10px;
 }
-.div-ul ul a:after{
+
+.div-ul ul a:after {
     content: "";
     position: absolute;
     background-color: #ff3c78;
@@ -37,42 +43,52 @@ header{
     bottom: -10px;
     transition: 0.3s;
 }
-.div-ul ul a:hover{
+
+.div-ul ul a:hover {
     color: #ffffff;
 }
-.div-ul ul a:hover::after{
+
+.div-ul ul a:hover::after {
     width: 100%;
 }
-.background{
+
+.background {
     background-color: #111a28;
 }
-.parent-div-main{
+
+.parent-div-main {
     margin-top: 100px;
     margin-left: 100px;
     display: flex;
 }
-#text{
+
+#text {
     color: white;
 }
-#hello{
+
+#hello {
     color: #00CF5D;
 }
-#name{
+
+#name {
     font-size: 80px;
     font-weight: 700;
 }
-#developer{
+
+#developer {
     color: #00CF5D;
 }
-#about span{
+
+#about span {
     position: relative;
     z-index: 100;
 }
-#about{
-    border:2px solid #00CF5D;
+
+#about {
+    border: 2px solid #00CF5D;
     text-decoration: none;
-    border-radius: 5px; 
-    background-color: #111a28; 
+    border-radius: 5px;
+    background-color: #111a28;
     color: white;
     position: relative;
     text-transform: uppercase;
@@ -81,16 +97,18 @@ header{
     margin-left: 10px;
     transition-delay: 0s;
 }
-#about:hover{
+
+#about:hover {
     transition-delay: 0.5s;
     color: #000;
     box-shadow: 0 0 10px #0f0,
-    0 0 20px #0f0,
-    0 0 40px #0f0,
-    0 0 80px #0f0,
-    0 0 160px #0f0;
+        0 0 20px #0f0,
+        0 0 40px #0f0,
+        0 0 80px #0f0,
+        0 0 160px #0f0;
 }
-#about::before{
+
+#about::before {
     content: '';
     position: absolute;
     left: -20px;
@@ -99,21 +117,22 @@ header{
     transform: translateY(-50%);
     background: #0f0;
     box-shadow: 5px -8px 0 #0f0,
-                5px -8px 0 #0f0;
+        5px -8px 0 #0f0;
     transition-delay: 0s, 0.5s, 01s, 1s;
-    transition: width 0.5s, left 0.5s, height 0.5s, 
-    box-shadow 0.5s
-    ;
+    transition: width 0.5s, left 0.5s, height 0.5s,
+        box-shadow 0.5s;
     border-radius: 5px;
 }
-#about:hover::before{
+
+#about:hover::before {
     width: 60%;
     height: 100%;
     left: -2px;
     box-shadow: 5px 0 0 #0f0,
-                5px 0 0 #0f0;
+        5px 0 0 #0f0;
 }
-#about::after{
+
+#about::after {
     content: '';
     position: absolute;
     right: -20px;
@@ -122,61 +141,84 @@ header{
     transform: translateY(-50%);
     background: #0f0;
     box-shadow: -5px -8px 0 #0f0,
-                -5px -8px 0 #0f0;
+        -5px -8px 0 #0f0;
     transition-delay: 0s, 0.5s, 01s, 1s;
-    transition: width 0.5s, left 0.5s, height 0.5s, 
-    box-shadow 0.5s
-    ;
+    transition: width 0.5s, left 0.5s, height 0.5s,
+        box-shadow 0.5s;
     border-radius: 5px;
 }
-#about:hover::after{
+
+#about:hover::after {
     width: 60%;
     height: 100%;
     right: -2px;
     box-shadow: -5px 0 0 #0f0,
-                -5px 0 0 #0f0;
+        -5px 0 0 #0f0;
 }
-#resume{
-    border: none; 
-    background-color: #00CF5D; 
-    border-radius: 5px; 
+
+#resume {
+    border: none;
+    background-color: #00CF5D;
+    border-radius: 5px;
     text-decoration: none;
     color: white;
     font-weight: 400;
     position: relative;
     display: inline-block;
-    padding: 12px  36px;
+    padding: 12px 36px;
 }
-#resume:hover::before{
+
+#resume:hover::before {
     background-color: #111a28;
     border: 2px solid #00CF5D;
     position: relative;
     transition: 0.5s;
 }
-#resume:hover{
+
+#resume:hover {
     background-color: #111a28;
     border: 2px solid #00CF5D;
     position: relative;
     transition: 0.5s;
 }
-#resume:hover::after{
+
+#resume:hover::after {
     background-color: #111a28;
     border: 2px solid #00CF5D;
     position: relative;
     transition: 0.5s;
 }
-#get{
+
+#get {
     border-color: #00CF5D;
-    border-radius: 5px; 
-    background-color: #111a28; 
+    border-radius: 5px;
+    background-color: #111a28;
     color: white;
 }
-.details{
+
+.details {
     margin-top: 300px;
     color: white;
 }
-.icon{
+
+.icon {
     display: flex;
     align-items: center;
     margin-right: 5px;
+}
+
+
+
+.portfolio-photo {
+    filter: grayscale(100%);
+}
+
+.portfolio-photo:hover {
+    transition: 0.5s;
+    filter: grayscale(0%);
+}
+
+.portfolio-photo:hover::after {
+    transition: 0.5s;
+    filter: grayscale(0%);
 }
