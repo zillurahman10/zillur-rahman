@@ -211,6 +211,10 @@ header {
 
 .portfolio-photo {
     filter: grayscale(100%);
+    border-radius: 50px;
+    width: 300px;
+    position: relative;
+    top: 20px;
 }
 
 .portfolio-photo:hover {
